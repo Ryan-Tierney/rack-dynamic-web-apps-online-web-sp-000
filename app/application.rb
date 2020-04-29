@@ -3,9 +3,9 @@
       def call(env)
         resp = Rack::Response.new
      
-        num_1 = Kernel.rand(1..)
-        num_2 = Kernel.rand(1..)
-        num_3 = Kernel.rand(1..)
+        num_1 = Kernel.rand(1..1000000)
+        num_2 = Kernel.rand(1..1000000)
+        num_3 = Kernel.rand(1..1000000)
      
         resp.write "#{num_1}\n"
         resp.write "#{num_2}\n"
